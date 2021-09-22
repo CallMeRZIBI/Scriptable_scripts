@@ -31,7 +31,7 @@ async function createWidget(){
     let launchDateTime = getLaunchDateTime(launch);
 
     // Add the launch time to the widget
-    displayLaunchDateTime(listwidget, launchDateTime, launchDateTime.date_precision);
+    displayLaunchDateTime(listwidget, launchDateTime, launch.date_precision);
 
     // Return the created widget
     return listwidget;
