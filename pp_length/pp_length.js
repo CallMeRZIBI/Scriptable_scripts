@@ -30,11 +30,11 @@ async function createWidget(){
 
     // Generate actual pp
     let thePP = generatePP(length);
-    printPP(thePP);
+    printPP(listWidget, thePP);
 
     // Rate the length of pp
     let rating = ratePP(getPPLength, min, max);
-    printPPcomponents(rating);
+    printPPcomponents(listWidget, rating);
 
     return listWidget;
 }
