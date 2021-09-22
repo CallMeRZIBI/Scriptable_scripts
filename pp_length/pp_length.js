@@ -2,6 +2,16 @@ let widget = await createWidget();
 let min = 1;
 let max = 32;
 
+// Check where the cript is running
+if(config.runsInWidget){
+    // Runs inside a widget so add it to the homescreen widget
+    Script.setWidget(widget);
+}else{
+    // Show the medium widget inside the app
+    widget.presentMedium();
+}
+Script.complete();
+
 async function createWidget(){
     // Create new empty ListWidget instance
     let listWidget = new ListWidget();
