@@ -77,7 +77,7 @@ function printPP(stack, text){
 
 function printPPcomponents(stack, text){
     let write = stack.addText(text);
-    write.centerLeftText();
+    write.leftAlignText();
     write.Font = Font.semiboldSystemFont(25);
     write.textColor = new Color("#ffffff");
 }
