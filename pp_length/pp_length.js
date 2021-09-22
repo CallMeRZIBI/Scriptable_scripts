@@ -12,7 +12,7 @@ Script.complete();
 
 async function createWidget(){
     let min = 1;
-    let max = 15;
+    let max = 20;
 
     // Create new empty ListWidget instance
     let listWidget = new ListWidget();
