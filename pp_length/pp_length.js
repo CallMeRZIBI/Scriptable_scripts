@@ -1,6 +1,4 @@
 let widget = await createWidget();
-let min = 1;
-let max = 32;
 
 // Check where the cript is running
 if(config.runsInWidget){
@@ -13,6 +11,9 @@ if(config.runsInWidget){
 Script.complete();
 
 async function createWidget(){
+    let min = 1;
+    let max = 32;
+
     // Create new empty ListWidget instance
     let listWidget = new ListWidget();
 
