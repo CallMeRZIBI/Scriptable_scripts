@@ -78,7 +78,7 @@ function displayLaunchDateTime(stack, launchDateTime, precision){
         let timestring = launchDateTime.toLocaleTimeString(undefined, timeOptions);
         addDateText(stack, timestring);
 
-    } else if(precision == day){
+    } else if(precision == "day"){
 
         // Add launch date
         const dateOptions = {year: "numeric", month:"2-digit", day:"2-digit"};
