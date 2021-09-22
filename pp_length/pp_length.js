@@ -25,15 +25,18 @@ async function createWidget(){
     heading.font = Font.lightSystemFont(25);
     heading.textColor = new Color("#ffffff");
 
+    // Spacer
+    listWidget.addSpacer(15);
+
     // Generate Length of pp
-    let getPPLength = getPPLength(min, max);
+    let PPLength = getPPLength(min, max);
 
     // Generate actual pp
     let thePP = generatePP(length);
     printPP(listWidget, thePP);
 
     // Rate the length of pp
-    let rating = ratePP(getPPLength, min, max);
+    let rating = ratePP(PPLength, min, max);
     printPPcomponents(listWidget, rating);
 
     return listWidget;
