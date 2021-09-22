@@ -1,4 +1,4 @@
-async function createWidget{
+async function createWidget(){
     // Create new empty ListWidget instance
     let listwidget = new ListWidget();
 
