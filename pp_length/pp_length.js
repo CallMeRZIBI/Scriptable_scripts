@@ -71,7 +71,7 @@ function ratePP(length, min, max){
 function printPP(stack, text){
     let write = stack.addText(text);
     write.centerAlignText();
-    write.Font = Font.semiboldSystemFont(35);
+    write.Font = Font.lightSystemFont(35);
     write.textColor = new Color("#ffffff");
     stack.addSpacer(15);
 }
