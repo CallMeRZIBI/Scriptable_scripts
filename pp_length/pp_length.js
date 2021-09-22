@@ -12,7 +12,7 @@ Script.complete();
 
 async function createWidget(){
     let min = 1;
-    let max = 32;
+    let max = 15;
 
     // Create new empty ListWidget instance
     let listWidget = new ListWidget();
@@ -71,8 +71,9 @@ function ratePP(length, min, max){
 function printPP(stack, text){
     let write = stack.addText(text);
     write.centerAlignText();
-    write.Font = Font.semiboldSystemFont(25);
+    write.Font = Font.semiboldSystemFont(35);
     write.textColor = new Color("#ffffff");
+    stack.addSpacer(15);
 }
 
 function printPPcomponents(stack, text){
